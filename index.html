@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>—Syll's</title>
+  
+  <!-- Favicon (si lo tienes) -->
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <!-- Sidebar -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard Hanrick" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Richard Hanrick">Syllkom</h1>
+          <p class="title">NodeJS Developer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:richard@example.com" class="contact-link">Syllkom.proto@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">WhatsApp</p>
+              <a href="tel:+12133522795" class="contact-link">+57 311 3825327</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="1982-06-23">May 27, 2009</time>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Cuzco, Cuzco, PE</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href=
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resumen</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- About Section -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">Acerca de mí</h2>
+        </header>
+        <section class="about-text">
+          <p>
+            Soy un editor, programador y diseñador de HorekuOs en Syll's CodeLab, PE. Estudio y practico mi conocimiento en este ámbito.
+          </p>
+          <p>
+            Mi trabajo es ayudar a personas con poco conocimiento a crear sus propios bots/proyectos, agregando un toque personal atractivo a sus proyectos. Mi objetivo es reunir personas con mis mismas ambiciones a través de estos proyectos.
+          </p>
+        </section>
+        <!-- Testimonials Modal -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper"></div>
+            <div class="modal-content"></div>
+          </section>
+        </div>
+        <!-- Clients Section -->
+        <section class="clients">
+          <h3 class="h3 clients-title">Clients</h3>
+          <ul class="clients-list has-scrollbar">
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="Client Logo">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- Resumen Section -->
+      <article class="resumen" data-page="resumen">
+        <header>
+          <h2 class="h2 article-title">Resumen</h2>
+        </header>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experiencia</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">HorekuOs</h4>
+              <span>2024 — Present</span>
+              <p class="timeline-text">
+                Creador del proyecto HorekuOs, el proyecto más importante de Syllkom.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Zenn</h4>
+              <span>2024 — 2024</span>
+              <p class="timeline-text">
+                Colaborador en Zenn, un simple bot de WhatsApp.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Colaborador db</h4>
+              <span>2025 — 2025</span>
+              <p class="timeline-text">
+                Pequeño colaborador en la API db de Zeppth.
+              </p>
+            </li>
+          </ol>
+        </section>
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Editor bots</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Programador</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- Projects Section -->
+      <section class="projects">
+        <div class="filter-select-box">
+          <button class="filter-select" data-select>
+            <div class="select-value" data-select-value>Select category</div>
+          </button>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <article class="blog" data-page="blog">
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Bot</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Feb 13, 2025</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">HorekuOs</h3>
+                  <p class="blog-text">
+                    Un simple bot de WhatsApp, con funciones completas. Puedes usarlo como base.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">DataBase</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Feb 1, 2025</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Animes - ES</h3>
+                  <p class="blog-text">
+                    Una pequeña base con animes en Español latino. Puedes adaptar el código a tu bot de WhatsApp.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">DataBase</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Feb 3, 2025</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Animes - Sub</h3>
+                  <p class="blog-text">
+                    Una base con animes en Sub español. Puedes adaptar el código a tu bot de WhatsApp.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">DataBase</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Feb 27, 2025</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Rol Waifu</h3>
+                  <p class="blog-text">
+                    Una base de personajes para juegos RPG, rol Waifu.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">DataBase</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Feb 3, 2025</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Hentai - Sub</h3>
+                  <p class="blog-text">
+                    Una base con Hentais en Sub español. Puedes adaptar el código a tu bot de WhatsApp.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="#">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Business</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Dec 29, 2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Syll's CodeLab</h3>
+                  <p class="blog-text">
+                    Pequeña empresa especializada en bots de WhatsApp.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- Contact Section -->
+      <article class="contact" data-page="contact">
+  <header>
+    <h2 class="h2 article-title">Contact</h2>
+  </header>
+  <section class="mapbox" data-mapbox>
+  <figure>
+    <img src="./assets/images/wallpaper.png" alt="Wallpaper" class="contact-image">
+  </figure>
+  </section>
+  <section class="contact-form">
+    <h3 class="h3 form-title">Contact Form</h3>
+    <form action="#" class="form" data-form>
+      <div class="input-wrapper">
+        <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+        <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+      </div>
+      <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+      <button class="form-btn" type="submit" disabled data-form-btn>
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Send Message</span>
+      </button>
+    </form>
+  </section>
+</article>
+    </div>
+  </main>
+
+  <!-- Custom JS -->
+  <script src="./assets/js/script.js"></script>
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
