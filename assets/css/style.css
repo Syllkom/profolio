@@ -63,6 +63,35 @@
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 }
 
+/* font */
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/Nunito-SemiBold.ttf') format('truetype');
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/Nunito-Bold.ttf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700; /* Usa Nunito-Bold */
+}
+
+p, span, a {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600; /* Usa Nunito-SemiBold */
+}
+
 
 
 
