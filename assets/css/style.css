@@ -867,22 +867,20 @@ main {
 .filter-list { display: none; }
 
 .filter-select-box {
-  position: relative;
-  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column; /* Cambia de horizontal a vertical */
+  align-items: center; /* Centra los elementos */
+  width: 50px; /* Ajusta el ancho según necesites */
 }
 
 .filter-select {
-  background: var(--eerie-black-2);
-  color: var(--light-gray);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 12px 16px;
-  border: 1px solid var(--jet);
-  border-radius: 14px;
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.filter-select-box {
+  position: relative;
+  margin-bottom: 25px;
 }
 
 .filter-select.active .select-icon { transform: rotate(0.5turn); }
