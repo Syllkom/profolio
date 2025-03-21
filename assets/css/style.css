@@ -61,6 +61,11 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+  
+  /* burton color */
+  --neon-red: #ff0000;
+  --bg-color: #0a0a0a;
+  --glass: rgba(255, 255, 255, 0.05);
 }
 
 /* font */
@@ -73,8 +78,8 @@
 
 @font-face {
   font-family: 'Nunito';
-  src: url('../fonts/Nunito-Bold.ttf') format('truetype');
-  font-weight: 700; /* Bold */
+  src: url('../fonts/Nunito-Black.ttf') format('truetype');
+  font-weight: 700; /* Black */
   font-style: normal;
 }
 
@@ -153,6 +158,25 @@ body { background: var(--smoky-black); }
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
+.neon-button { 
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 2px solid var(--neon-red);
+  color: var(--neon-red);
+  font-size: 0.9rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 10px var(--neon-red);
+  margin-top: 1rem;
+}
+
+.neon-button:hover {
+  background: var(--neon-red);
+  color: var(--bg-color);
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.4);
+}
+
 
 .sidebar,
 article {
@@ -1832,11 +1856,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .info-content .title { margin: auto; }
 
   .info_more-btn { display: none; }
-
-  .sidebar-info_more {
-    opacity: 1;
-    visibility: visible;
-  }
 
   .contacts-list { grid-template-columns: 1fr; }
 
