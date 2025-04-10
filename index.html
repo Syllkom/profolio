@@ -1,503 +1,378 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>—Syll's</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>—Syll's</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css" />
+    
+    <meta property="og:title" content="—Syll's | Syllkom ">
+  <meta property="og:description" content="La peor enfermedad es el aburrimiento">
+  <meta property="og:image" content="https://syllkom.netlify.app//assets/preview.png">
   
-  <!-- Metaetiquetas Open Graph -->
-  <meta property="og:title" content="—Syll's | NodeJS Developer">
-  <meta property="og:description" content="My vcard • Syllkom">
-  <meta property="og:image" content="https://syllkom.netlify.app//assets/images/wallpaper.png">
-
-  <meta property="og:url" content="https://syllkom.netlify.app/">
-  <meta property="og:type" content="website">
+  <link rel="icon" href="./assets/icon.png" type="image/x-icon">
   
-  <link rel="icon" href="./assets/images/icon.ico" type="image/x-icon">
-  
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <main>
-    <!-- Sidebar -->
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="—Syll's" width="80">
-        </figure>
-        <div class="info-content">
-          <h1 class="name" title="—Syll's">Syllkom</h1>
-          <p class="title">NodeJS Developer</p>
-        </div>
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto: Syllkom@example.com" class="contact-link">Syllkom.proto@gmail.com</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">WhatsApp</p>
-              <a href="tel:+12133522795" class="contact-link">+57 311 3825327</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-              <time datetime="1982-06-23">May 27, 2009</time>
-            </div>
-          </li>
-        </ul>
-        <div class="separator"></div>
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href=
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Syllkom</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-    </aside>
+    </nav>
 
-    <!-- Main Content -->
-    <div class="main-content">
-      <!-- Navbar -->
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resumen</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Media-links</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- About Section -->
-      <article class="about active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">Acerca de mí</h2>
-        </header>
-        <section class="about-text">
-          <p>
-            Soy un programador/edito y diseñador de HorekuOs en Syll's CodeLab, PE. Estudio y practico mi conocimiento en este ámbito.
-          </p>
-          <p>
-            Mi trabajo es ayudar a personas con poco conocimiento a crear sus propios bots/proyectos, agregando un toque personal atractivo a sus proyectos. Mi objetivo es reunir personas con mis mismas ambiciones a través de estos proyectos.
-          </p>
-        </section>
-        <!-- Testimonials Modal -->
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-            <div class="modal-img-wrapper"></div>
-            <div class="modal-content"></div>
-          </section>
+    <nav id="projet-nav">
+      <div class="logo">Syllkom</div>
+      <div class="projet-menu">
+        <div class="projet-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <!-- Clients Section -->
-        <section class="clients">
-          <h3 class="h3 clients-title">Clients</h3>
-          <ul class="clients-list has-scrollbar">
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="Client Logo">
-              </a>
-            </li>
-          </ul>
-         <button class="neon-button" onclick="window.open('https://horekuos.netlify.app/', '_blank')">HorekuOs ➙</button>
-        </section>
-      </article>
-
-      <!-- Resumen Section -->
-      <article class="resumen" data-page="resumen">
-        <header>
-          <h2 class="h2 article-title">Resumen</h2>
-        </header>
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Experiencia</h3>
-          </div>
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">HorekuOs</h4>
-              <span>2024 — Present</span>
-              <p class="timeline-text">
-                Creador del proyecto HorekuOs, el proyecto más importante de Syllkom.
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Zenn</h4>
-              <span>2024 — 2024</span>
-              <p class="timeline-text">
-                Colaborador en Zenn, un simple bot de WhatsApp.
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Colaborador db</h4>
-              <span>2025 — 2025</span>
-              <p class="timeline-text">
-                Pequeño colaborador en la API db de Zeppth.
-              </p>
-            </li>
-          </ol>
-        </section>
-        <section class="skill">
-          <h3 class="h3 skills-title">My skills</h3>
-          <ul class="skills-list content-card">
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Editor bots</h5>
-                <data value="80">80%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Programador</h5>
-                <data value="70">70%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!-- Projects Section -->
-      <section class="projects">
-        <div class="filter-select-box">
-          <button class="filter-select" data-select>
-            <div class="select-value" data-select-value></div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/icon.png" alt="Syllkom profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hola, Soy</p>
+        <h1 class="title">—Syll's</h1>
+        <p class="section__text__p1">@Syllkom</p>
+        <p class="section__text__p2">JavaScript Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="location.href='./#projects'">
+            Projects
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
           </button>
         </div>
-      </section>
-
-      <!-- Blog Section -->
-      <article class="blog" data-page="blog">
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-        <section class="blog-posts">
-          <ul class="blog-posts-list">
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Bot</p>
-                    <span class="dot"></span>
-                    <time datetime="2022-02-23">Feb 13, 2025</time>
-                  </div>
-                  <p class="blog-text">
-                    Un simple bot de WhatsApp, con funciones completas. Puedes usarlo como base.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">DataBase</p>
-                    <span class="dot"></span>
-                    <time datetime="2022-02-23">Feb 1, 2025</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Animes - ES</h3>
-                  <p class="blog-text">
-                    Una pequeña base con animes en Español latino. Puedes adaptar el código a tu bot de WhatsApp.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">DataBase</p>
-                    <span class="dot"></span>
-                    <time datetime="2022-02-23">Feb 3, 2025</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Animes - Sub</h3>
-                  <p class="blog-text">
-                    Una base con animes en Sub español. Puedes adaptar el código a tu bot de WhatsApp.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">DataBase</p>
-                    <span class="dot"></span>
-                    <time datetime="2022-02-23">Feb 27, 2025</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Rol Waifu</h3>
-                  <p class="blog-text">
-                    Una base de personajes para juegos RPG, rol Waifu.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">DataBase</p>
-                    <span class="dot"></span>
-                    <time datetime="2022-02-23">Feb 3, 2025</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Hentai - Sub</h3>
-                  <p class="blog-text">
-                    Una base con Hentais en Sub español. Puedes adaptar el código a tu bot de WhatsApp.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li class="blog-post-item">
-              <a href="#">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Business</p>
-                    <span class="dot"></span>
-                    <time datetime="2022-02-23">Dec 29, 2024</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Syll's CodeLab</h3>
-                  <p class="blog-text">
-                    Pequeña empresa especializada en bots de WhatsApp.
-                  </p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-      
-    <article class="media-links" data-page="media-links">
-  <section class="media-links">
-    <h2 class="h2 article-title">Media links</h2>
-    <ul class="service-list">
-      <li class="service-item">
-        <a href="https://github.com/Syllkom" target="_blank" class="media-link">
-          <div class="service-icon-box">
-            <img src="./assets/images/github.png" alt="GitHub icon" width="40">
-          </div>
-          <div class="service-content-box">
-            <h3 class="h3 service-item-title">GitHub</h3>
-            <p class="service-item-text">
-              https://github.com/Syllkom
-            </p>
-          </div>
-        </a>
-      </li>
-      <li class="service-item">
-        <a href="https://t.me/Syllkom" target="_blank" class="media-link">
-          <div class="service-icon-box">
-            <img src="./assets/images/telegram.png" alt="Telegram icon" width="40">
-          </div>
-          <div class="service-content-box">
-            <h3 class="h3 service-item-title">Telegram</h3>
-            <p class="service-item-text">
-              https://t.me/Syllkom
-            </p>
-          </div>
-        </a>
-      </li>
-      <li class="service-item">
-        <a href="https://youtube.com/@syllkom" target="_blank" class="media-link">
-          <div class="service-icon-box">
-            <img src="./assets/images/youtube.png" alt="YouTube icon" width="40">
-          </div>
-          <div class="service-content-box">
-            <h3 class="h3 service-item-title">YouTube</h3>
-            <p class="service-item-text">
-              https://youtube.com/@syllkom
-            </p>
-          </div>
-        </a>
-      </li>
-      <li class="service-item">
-        <a href="https://wa.me/573113825327" target="_blank" class="media-link">
-          <div class="service-icon-box">
-            <img src="./assets/images/whatsApp.png" alt="WhatsApp icon" width="40">
-          </div>
-          <div class="service-content-box">
-            <h3 class="h3 service-item-title">WhatsApp</h3>
-            <p class="service-item-text">
-              https://wa.me/573113825327
-            </p>
-          </div>
-        </a>
-      </li>
-      <li class="service-item">
-        <a href="https://www.instagram.com/syllkom" target="_blank" class="media-link">
-          <div class="service-icon-box">
-            <img src="./assets/images/instagram.png" alt="Instagram icon" width="40">
-          </div>
-          <div class="service-content-box">
-            <h3 class="h3 service-item-title">Instagram</h3>
-            <p class="service-item-text">
-              https://www.instagram.com/syllkom
-            </p>
-          </div>
-        </a>
-      </li>
-      <li class="service-item">
-        <a href="https://www.facebook.com/Syllkom374" target="_blank" class="media-link">
-          <div class="service-icon-box">
-            <img src="./assets/images/facebook.png" alt="Facebook icon" width="40">
-          </div>
-          <div class="service-content-box">
-            <h3 class="h3 service-item-title">Facebook</h3>
-            <p class="service-item-text">
-              https://www.facebook.com/Syllkom374
-            </p>
-          </div>
-        </a>
-      </li>
-      <li class="service-item">
-        <a href="https://www.threads.net/@syllkom" target="_blank" class="media-link">
-          <div class="service-icon-box">
-            <img src="./assets/images/threads.png" alt="Threads icon" width="40">
-          </div>
-          <div class="service-content-box">
-            <h3 class="h3 service-item-title">Threads</h3>
-            <p class="service-item-text">
-              https://www.threads.net/@syllkom
-            </p>
-          </div>
-        </a>
-      </li>
-      <li class="service-item">
-        <a href="https://www.threads.net/@syllkom" target="_blank" class="media-link">
-          <div class="service-icon-box">
-            <img src="./assets/images/tiktok.png" alt="Tiktok icon" width="40">
-          </div>
-          <div class="service-content-box">
-            <h3 class="h3 service-item-title">Titkok</h3>
-            <p class="service-item-text">
-              https://www.tiktok.com/@syllkom
-            </p>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </section>
-</article>
-
-
-      <!-- Contact Section -->
-     <article class="contact" data-page="contact">
-  <header>
-    <h2 class="h2 article-title">Contact</h2>
-  </header>
-  <section class="mapbox" data-mapbox>
-    <figure>
-      <video class="contact-video" autoplay loop muted playsinline>
-        <source src="./assets/videos/cid.mp4" type="video/mp4">
-        Tu navegador no soporta la reproducción de video.
-      </video>
-      <button class="volume-btn" data-volume-btn>
-        <ion-icon name="volume-high"></ion-icon>
-        <ion-icon name="volume-mute"></ion-icon>
-      </button>
-    </figure>
-  </section>
-  <section class="contact-form">
-    <h3 class="h3 form-title">Contact Form</h3>
-    <form action="#" class="form" data-form>
-      <div class="input-wrapper">
-        <input type="text" name="fullname" class="form-input" placeholder="Nombre completo" required data-form-input>
-        <input type="email" name="email" class="form-input" placeholder="Dirección de tu Gmail" required data-form-input>
+        <div id="socials-container">
+         <img
+            src="./assets/social-icon/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Syllkom'"
+          />
+          <img
+            src="./assets/social-icon/telegram.png"
+            alt="My Telegram profile"
+            class="icon"
+            onclick="location.href='https://t.me/Syllkom'"
+          />
+          <img
+            src="./assets/social-icon/whatsapp.png"
+            alt="My WhatsApp profile"
+            class="icon"
+            onclick="location.href='https://wa.me/573113825327?text=Hola'"
+          />
+          <img
+            src="./assets/social-icon/instagram.png"
+            alt="My Instagram profile"
+            class="icon"
+            onclick="location.href='https://instagram.com/Syllkom'"
+          />
+          <img
+            src="./assets/social-icon/threads.png"
+            alt="My Threads profile"
+            class="icon"
+            onclick="location.href='https://threads.net/@syllkom'"
+          />
+          <img
+            src="./assets/social-icon/facebook.png"
+            alt="My Facebook profile"
+            class="icon"
+            onclick="location.href='https://facebook.com/Syllkom374'"
+          />
+          <img
+            src="./assets/social-icon/youtube.png"
+            alt="My YouTube profile"
+            class="icon"
+            onclick="location.href='https://youtube.com/@syllkom'"
+          />
+        </div>
       </div>
-      <textarea name="message" class="form-input" placeholder="Tu mensaje" required data-form-input></textarea>
-      <button class="form-btn" type="submit" disabled data-form-btn>
-        <ion-icon name="paper-plane"></ion-icon>
-        <span>Enviar mensaje</span>
-      </button>
-    </form>
-  </section>
-</article>
-
-
-    </div>
-  </main>
-
-  <!-- Custom JS -->
-  <script src="./assets/js/script.js"></script>
-  <!-- Ionicons -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Conozca más</p>
+      <h1 class="title">Acerca de mí</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/icons/experience.png"
+                alt="Experiencia icon"
+                class="icon"
+              />
+              <h3>Experiencia</h3>
+              <p>1+ año/s<br />JavaScript Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/icons/happ.png"
+                alt=" icon"
+                class="icon"
+              />
+              <h3>Cumpleaños</h3>
+              <p>27 de Mayo<br />2009</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              La peor enfermedad es el aburrimiento. Programar es una medicina que combate la inactividad. Al sumergirse en líneas de código, se generan soluciones y se estimula la mente. La creatividad se activa y el tiempo se ocupa de manera productiva. Así, la monotonía se disipa y surgen nuevos desafíos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/icons/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explora mi</p>
+      <h1 class="title">Experiencia</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>BASIC LOGIC</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>BASIC LOGIC</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/icons/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/icons/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Explorar mis recientes</p>
+      <h1 class="title">Proyectos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projet-img/bo.png"
+                alt="Bio base"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Bio base</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Syllkom/Link-Base'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projet-img/ho.png"
+                alt="HorekuOs"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">HorekuOs</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Syllkom'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projet-img/kz.png"
+                alt="Kaze bot"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">KazeBot-MD</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Syllkom/KazeBot-MD'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projet-img/xb.png"
+                alt="Xiao bot"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">XiaoBot-MD</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Syllkom/XiaoBot-MD'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/icons/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Contáctanos</p>
+      <h1 class="title">Contactame</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/icons/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:Syllkom.proto@gmail.com">Syllkom.proto@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>&#169; Syll's CodeLab 2025. All rights reserved</p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
